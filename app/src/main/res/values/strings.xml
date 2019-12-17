@@ -15,4 +15,5 @@
     <string name="sum">sum</string>
     <string name="choose_the_category">Choose the category</string>
     <string name="save_spendding">Save spendding</string>
+    <string name="how_much_money">How much money do you plan to spend per month?</string>
 </resources>

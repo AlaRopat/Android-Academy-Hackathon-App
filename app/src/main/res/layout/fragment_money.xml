@@ -17,7 +17,7 @@
 		android:layout_marginTop="50dp"
 		android:gravity="center"
 		android:padding="20dp"
-		android:text="How much money you plan to spend per month?"
+		android:text="@string/how_much_money"
 		android:textColor="@color/white"
 		android:textSize="30sp"
 		android:textStyle="bold"
