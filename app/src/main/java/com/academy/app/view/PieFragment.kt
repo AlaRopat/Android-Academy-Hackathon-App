@@ -1,5 +1,6 @@
 package com.academy.app.view
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -47,12 +48,30 @@ class PieFragment:Fragment() {
                 stat.map { item -> PieEntry(item.percentage, item.name) },
                 "Our spending"
             )
-            data.colors = ColorTemplate.createColors(ColorTemplate.COLORFUL_COLORS)
+            data.colors = ColorTemplate.createColors(JOYFUL_COLORS)
+            data.valueTextSize = 15f
             pieChartId.data = PieData(data)
             pieChartId.setEntryLabelTextSize(15F)
-            pieChartId.animateXY(7000, 7000)
+            pieChartId.setCenterTextSize(15F)
+            pieChartId.setEntryLabelColor(Color.BLACK)
+            pieChartId.centerText = "Statistics per category"
+            pieChartId.animateXY(1000, 1500)
         })
 
     }
+
+    val JOYFUL_COLORS = intArrayOf(
+        Color.rgb(217, 80, 138),
+        Color.rgb(254, 149, 7),
+        Color.rgb(254, 247, 120),
+        Color.rgb(106, 167, 134),
+        Color.rgb(53, 194, 209),
+        Color.rgb(124, 252, 0),
+        Color.rgb(64, 224, 208),
+        Color.rgb(25, 25, 112),
+        Color.rgb(139, 0, 139),
+        Color.rgb(255, 20, 147)
+
+    )
 
 }

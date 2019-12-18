@@ -13,7 +13,6 @@ import com.academy.app.db.model.Expense
 import com.academy.app.dependency.DataStorage
 import com.academy.app.mvvm.viewModel.CategoryViewModel
 import com.academy.app.mvvm.viewModel.ExpenseViewModel
-import com.academy.app.view.spending.SpendingListFragment
 import kotlinx.android.synthetic.main.adding_item_fragment.*
 
 
@@ -67,7 +66,7 @@ class AddNewItemFragment : Fragment() {
             )
             viewModel.addExpense(expense, categories_spinner.selectedItem.toString())
             val activity = activity as MainActivity
-            activity.showFragment(SpendingListFragment(), true)
+            activity.showFragment(MainFragment(), false)
         }
 
 

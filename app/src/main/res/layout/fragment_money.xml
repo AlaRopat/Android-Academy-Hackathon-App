@@ -39,20 +39,21 @@
 		
 		
 	</cn.carbswang.android.numberpickerview.library.NumberPickerView>
-	
+
 	<com.google.android.material.textfield.TextInputEditText
 		android:id="@+id/et_salary"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
 		android:layout_marginStart="30dp"
+		android:backgroundTint="@color/white"
 		android:inputType="number"
+		android:gravity="center"
 		android:textColor="@color/white"
 		android:textSize="30sp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toStartOf="@id/currencyPicker"
 		app:layout_constraintStart_toStartOf="parent"
-		android:backgroundTint="@color/white"
 		app:layout_constraintTop_toBottomOf="@id/tv_enter_salary"
-		/>
+		tools:text="500" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
